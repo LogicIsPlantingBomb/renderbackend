@@ -11,7 +11,7 @@ connectToDb();
 
 // Use the configured cors middleware
 app.use(cors({
-  origin: process.env.FRONTEND_URL, // Use the value of the environment variable
+  origin: "https://basic-register-login-backend.vercel.app", // Use the value of the environment variable
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
